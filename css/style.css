@@ -1,0 +1,1510 @@
+/* General */
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: 'Redressed', cursive;
+    background-color: #0b0b0b;
+    font-size: 18px;
+    line-height: 21px;
+    color: #fff;
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.products__container {
+    max-width: 1570px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+}
+
+
+/* Header */
+
+.header {
+    height: 100vh;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/header-bg-1.png);
+    left: 0;
+    right: 0;
+    margin-bottom: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header__top {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.header__tel {
+    line-height: 28px;
+    font-size: 26px;
+    padding-left: 35px;
+    position: relative;
+}
+
+.header__inner {
+    justify-content: space-around;
+}
+
+.header__tel::before {
+    content: "";
+    position: absolute;
+    background-image: url(../images/tel.png);
+    width: 30px;
+    height: 30px;
+    left: 0;
+    margin-top: 3px;
+}
+
+.header__logo-btn {
+    height: 65px;
+}
+
+.nav__inner {
+    display: flex;
+    justify-content: space-around;
+    margin: 25px 45px;
+}
+
+.nav__inner ul {
+    transition: all .5s;
+}
+
+.nav__item+.nav__item {
+    margin-left: 80px;
+}
+
+.nav__item {
+    font-size: 20px;
+    line-height: 20px;
+}
+
+.nav__item:hover {
+    text-decoration: underline;
+}
+
+.header__contact {
+    padding-top: 15px;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 70vh;
+}
+
+.header__title {
+    font-family: 'Redressed', cursive;
+    font-size: 140px;
+    line-height: 200px;
+}
+
+.header__content span {
+    font-family: 'Redressed', cursive;
+    margin-top: 15px;
+    margin-left: 25px;
+    font-size: 84px;
+    line-height: 84px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+/* Section Pruducts */
+
+.products {
+    margin-bottom: 250px;
+}
+
+.products__container {
+    position: relative;
+}
+
+.prodcts__title {
+    text-align: center;
+    margin-bottom: 150px;
+}
+
+.products__inner {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 150px;
+}
+
+.products__item {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+    padding: 30px 65px;
+    border-radius: 43px;
+    background: #0b0b0b;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__item::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    bottom: -7px;
+    left: -7px;
+    right: -7px;
+    background: linear-gradient(35deg, #FBBB16, #E9433A);
+    border-radius: 47px;
+    z-index: -1;
+}
+
+.products__item:hover {
+    color: #fb8516;
+    ;
+}
+
+.product__title {
+    font-family: 'Redressed';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    color: inherit;
+}
+
+.product-img {
+    margin-bottom: 5px;
+}
+
+.decoration-1 {
+    position: absolute;
+    bottom: -250px;
+    left: 20px;
+}
+
+.decoration-2 {
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+
+
+/* Section Avantages */
+
+.avatages {
+    margin-bottom: 150px;
+}
+
+.avantages-items__inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 50px 0;
+    justify-content: space-around;
+}
+
+.avantages-item {
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.avatages__container {
+    position: relative;
+}
+
+.decoration-3 {
+    position: absolute;
+    right: -185px;
+    bottom: 405px;
+}
+
+.section__title {
+    font-family: 'Redressed', cursive;
+    font-size: 96px;
+    line-height: 103px;
+    font-weight: 400;
+}
+
+.avatages-img {
+    height: 130px;
+    width: 130px;
+}
+
+.avantages__title {
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.avantage__text-title {
+    font-family: 'Bungee', cursive;
+    font-size: 36px;
+    line-height: 56px;
+    text-align: center;
+    font-weight: normal;
+}
+
+.avantage__text-content {
+    font-family: 'Redressed';
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    font-weight: normal;
+}
+
+
+/* Section About Us */
+
+.about__us {
+    margin-bottom: 150px;
+    position: relative;
+}
+
+.ab-us__title {
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+.ab-us__inner {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.ab-us__item {
+    position: relative;
+    width: 225px;
+    height: 330px;
+    margin: 30px;
+    padding: 10px 65px;
+    border-radius: 43px;
+    background: #0b0b0b;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.ab-us__item:hover {
+    color: #fb8516;
+}
+
+.ab-us__item::before {
+    content: "";
+    position: absolute;
+    top: -7px;
+    bottom: -7px;
+    left: -7px;
+    right: -7px;
+    background: linear-gradient(35deg, #FBBB16, #E9433A);
+    border-radius: 47px;
+    z-index: -1;
+}
+
+.ab-us-numbers {
+    font-family: 'Bungee';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 50px;
+    text-align: center;
+    color: inherit;
+}
+
+.ab-us-numbers span {
+    font-family: 'Redressed';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.decoration-4 {
+    position: absolute;
+    top: 0px;
+    left: -130px;
+}
+
+.decoration-5 {
+    position: absolute;
+    right: -120px;
+    bottom: -100px;
+}
+
+.about__us-container {
+    position: relative;
+}
+
+
+/* JS Windows */
+
+.info__inner {
+    position: absolute;
+    z-index: 2;
+}
+
+.expirience__info,
+.clients__info,
+.products-num__info,
+.florist__info {
+    position: absolute;
+    transition: all .5s;
+    z-index: 2;
+}
+
+.expirience__info {
+    left: -2000px;
+}
+
+.expirience__info.active {
+    left: 0;
+}
+
+.clients__info {
+    left: -2000px;
+}
+
+.clients__info.active {
+    left: 0;
+}
+
+.close__btn-img {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.products-num__info {
+    left: -2200px;
+}
+
+.products-num__info.active {
+    left: 600px;
+}
+
+.florist__info {
+    left: -2200px;
+}
+
+.florist__info.active {
+    left: 600px;
+}
+
+.item-x {
+    margin-top: 150px;
+}
+
+
+/* Footer */
+
+.footer {
+    margin-top: 120px;
+    background-color: #222222;
+}
+
+.footer-container {
+    max-width: 1940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.footer__logo {
+    max-width: 250px;
+}
+
+.footer-sections__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__section {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 50px;
+}
+
+.footer-section__title {
+    font-family: 'Modern No. 20';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 51px;
+    text-align: center;
+}
+
+.footer__mail {
+    font-family: 'Modern No. 20';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 39px;
+    padding-left: 65px;
+    position: relative;
+}
+
+.footer__mail::before {
+    content: "";
+    background-image: url(../images/mail.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+}
+
+.footer__tel {
+    font-family: 'Modern No. 20';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 39px;
+    padding-left: 65px;
+    position: relative;
+}
+
+.footer__tel::before {
+    content: "";
+    background-image: url(../images/footer-tel.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    top: -3px;
+}
+
+.footer__facebook {
+    font-family: 'Modern No. 20';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 39px;
+    padding-left: 65px;
+    position: relative;
+}
+
+.footer__facebook::before {
+    content: "";
+    background-image: url(../images/facebook.png);
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    left: 0;
+    background-repeat: no-repeat;
+    top: -8px;
+}
+
+.footer__logo-btn {
+    display: block;
+}
+
+.footer-section-1 {
+    justify-content: space-between;
+}
+
+.footer-section-2 {
+    justify-content: space-around;
+    align-items: center;
+}
+
+.footer-section-3 {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-grafic__img {
+    max-width: 200px;
+    margin-bottom: 50px;
+}
+
+.map {
+    width: 500px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+
+/* Footer Disclaimer */
+
+.footer__disclaimer {
+    height: 100px;
+    background-color: #222222;
+    padding-top: 25px;
+    display: flex;
+}
+
+.diclaimer__text {
+    max-width: 1000px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 30px;
+    margin: 0 auto;
+}
+
+
+/* Product Page Header */
+
+.page-header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page__header {
+    margin-bottom: 100px;
+    position: relative;
+}
+
+.header__logo-products {
+    margin-top: 30px;
+}
+
+.header__contact-products {
+    margin-top: 25px;
+}
+
+.page-decor-1 {
+    position: absolute;
+    top: -120px;
+    right: 1px;
+}
+
+.page-decor-2 {
+    position: absolute;
+    bottom: -40px;
+    left: 1px;
+}
+
+.plants__trees {
+    margin-bottom: 100px;
+}
+
+.product__arrow {
+    display: block;
+    margin: 40px auto;
+}
+
+
+/* Products styles */
+
+.page-products__title {
+    font-family: 'Bungee', cursive;
+    font-size: 86px;
+    line-height: 86px;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 125px;
+    margin-bottom: 120px;
+}
+
+.page-products__text {
+    font-family: 'Redressed';
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 75px;
+    text-align: center;
+}
+
+.products__section-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.products__section-item {
+    position: relative;
+    width: 466px;
+    height: 500px;
+    padding: 30px 65px;
+    text-align: center;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.products__section-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #0B0B0B;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.page-product__title {
+    font-family: 'Bungee';
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 58px;
+}
+
+.products__section-img {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+
+/* Backgrounds */
+
+.plants__trees {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/plants__trees-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cactus {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cactus-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.simple__flowers {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/simple__flower-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.arrangement-1 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/arrangement__1-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.arrangement-2 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/arrangement__2-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.arrangement-3 {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/arrangement__3-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.bouquets__red {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bouquets__red.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.bouquets__blue {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bouquets__blue.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+.bouquets__yellow {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/bouquets__yellow.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 100px;
+}
+
+
+/* Adaptiv */
+
+@media (max-width:1600px) {
+    .decoration-3 {
+        display: none;
+    }
+
+    .decoration-4 {
+        left: 60px;
+    }
+
+    .decoration-5 {
+        right: 50px;
+    }
+}
+
+@media (max-width:1415px) {
+    .decoration-1 {
+        position: absolute;
+        bottom: 53px;
+        left: 34px;
+    }
+
+    .footer__logo {
+        max-width: 200px;
+    }
+
+    .footer-section__title {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .footer__mail,
+    .footer__tel,
+    .footer__facebook {
+        font-size: 26px;
+    }
+
+    .footer-grafic__img {
+        max-width: 170px;
+        margin-bottom: 68px;
+    }
+}
+
+@media (max-width:1315px) {
+    .products__section-img {
+        width: 220px;
+    }
+
+    .page-product__title {
+        font-size: 38px;
+        line-height: 48px;
+    }
+
+    .products__section-item {
+        width: 350px;
+        height: 400px;
+    }
+
+    .product__bg {
+        height: 500px;
+    }
+}
+
+@media (max-width:1240px) {
+    .header__top {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav__item+.nav__item {
+        margin-left: 30px;
+    }
+
+    .header__title {
+        font-size: 120px;
+    }
+
+    .header__content {
+        height: 50vh;
+    }
+
+    .header__content span {
+        font-size: 64px;
+        line-height: 64px;
+    }
+
+    .nav__inner {
+        display: flex;
+        gap: 60px;
+    }
+
+    .item-x {
+        margin-top: 30px;
+    }
+
+    .decoration-5 {
+        position: absolute;
+        bottom: -170px;
+    }
+
+    .products-num__info.active {
+        left: 10px;
+    }
+
+    .florist__info.active {
+        left: 10px;
+    }
+
+    .expirience__info.active {
+        left: 10px;
+    }
+
+    .clients__info.active {
+        left: 10px;
+    }
+
+    .map {
+        height: 200px;
+        width: 400px;
+    }
+
+    .footer-grafic__img {
+        margin-bottom: 27px;
+    }
+
+    .footer__mail,
+    .footer__tel,
+    .footer__facebook {
+        margin: 15px 0;
+    }
+}
+
+@media (max-width:1100px) {
+    .products__section-img {
+        width: 160px;
+    }
+
+    .page-product__title {
+        font-size: 30px;
+        line-height: 34px;
+    }
+
+    .products__section-item {
+        width: 250px;
+        height: 300px;
+    }
+
+    .product__bg {
+        height: 390px;
+        margin-bottom: 80px;
+    }
+
+    .footer {
+        margin-top: 100px;
+        ;
+    }
+
+    .decoration-5 {
+        bottom: -70px;
+    }
+}
+
+@media (max-width:1060px) {
+    .products__inner {
+        padding: 0;
+    }
+
+    .products__item {
+        position: relative;
+        width: 230px;
+        height: 230px;
+    }
+
+    .product-img {
+        width: 120px;
+    }
+
+    .decoration-1 {
+        position: absolute;
+        bottom: -200px;
+        left: 20px;
+    }
+
+    .footer__mail::before,
+    .footer__tel::before {
+        display: none;
+    }
+
+    .footer__mail,
+    .footer__tel,
+    .footer__facebook {
+        padding-left: 0;
+        margin: 0;
+    }
+
+    .footer__facebook {
+        padding-left: 60px;
+    }
+
+    .footer-grafic__img {
+        max-width: 130px;
+    }
+
+    .footer-section__title {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .footer__mail,
+    .footer__tel,
+    .footer__facebook {
+        font-size: 20px;
+    }
+
+    .map {
+        width: 300px;
+        height: 200px;
+    }
+
+    .diclaimer__text {
+        max-width: 600px;
+        text-align: center;
+        font-size: 20px;
+        line-height: 24px;
+    }
+}
+
+@media (max-width:905px) {
+    .decoration-1 {
+        position: absolute;
+        bottom: -10px;
+        left: 18px;
+    }
+
+    .footer-grafic__img {
+        max-width: 110px;
+    }
+
+    .page-products__title {
+        font-size: 62px;
+        line-height: 76px;
+        margin-top: 210px;
+        margin-bottom: 32px;
+    }
+
+    .page-decor-1,
+    .page-decor-2 {
+        width: 150px;
+    }
+
+    .page-decor-1 {
+        position: absolute;
+        top: -170px;
+        right: 10px;
+    }
+
+    .page-decor-2 {
+        bottom: -170px;
+        left: 10px;
+    }
+
+    .product__arrow {
+        bottom: -156px;
+        width: 150px;
+    }
+
+    .page-products__text {
+        font-family: 'Redressed';
+        font-weight: 400;
+        font-size: 54px;
+        line-height: 65px;
+        text-align: center;
+    }
+
+    .footer {
+        margin-top: 80px;
+        ;
+    }
+}
+
+@media (max-width:850px) {
+
+    .decoration-2,
+    .decoration-1 {
+        height: 100px;
+    }
+
+    .decoration-1 {
+        bottom: 85px;
+    }
+
+    .decoration-2 {
+        top: 125px;
+    }
+
+    .section__title {
+        font-size: 86px;
+    }
+
+    .decoration-4 {
+        top: 90px;
+        height: 100px;
+        left: 5px;
+    }
+
+    .decoration-5 {
+        height: 100px;
+        bottom: -90px;
+    }
+
+    .footer__section {
+        padding: 10px;
+        padding-top: 15px;
+    }
+
+    .products__section-img {
+        width: 120px;
+        margin-top: 0px;
+        margin-bottom: 20px;
+    }
+
+    .page-product__title {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .products__section-item {
+        width: 200px;
+        height: 250px;
+    }
+
+    .product__bg {
+        height: 300px;
+        margin-bottom: 60px;
+    }
+}
+    .page-decor-2 {
+        bottom: 0px;
+        left: 10px;
+    }
+
+@media (max-width:690px) {
+    .header__title {
+        font-size: 86px;
+        line-height: 90px;
+    }
+
+    .header__content span {
+        font-size: 60px;
+    }
+
+    .nav__inner {
+        margin: 10px 44px;
+    }
+
+    .nav__item+.nav__item {
+        margin-left: 30px;
+    }
+
+    .avantages__title {
+        font-size: 64px;
+        line-height: 80px;
+        margin-bottom: 50px;
+    }
+
+    .avatages-img {
+        height: 90px;
+        width: 90px;
+    }
+
+    .avantage__text-title {
+        font-size: 20px;
+        line-height: 40px;
+    }
+
+    .avantage__text-content {
+        font-size: 24px;
+        line-height: 16px;
+    }
+
+    .avantages-item {
+        max-width: 200px;
+    }
+
+    .slider .slick-dots {
+        margin-bottom: 75px;
+    }
+
+    .header__logo-img {
+        max-width: 200px;
+    }
+
+    .header__tel::before {
+        margin-top: 0px;
+    }
+
+    .header__tel {
+        line-height: 28px;
+        font-size: 18px;
+    }
+
+    .footer-grafic__img {
+        max-width: 70px;
+    }
+
+    .map {
+        width: 188px;
+        height: 125px;
+    }
+
+    .footer-section__title {
+        font-size: 22px;
+        line-height: 34px;
+    }
+
+    .footer__logo {
+        max-width: 126px;
+    }
+
+    .footer__mail,
+    .footer__tel,
+    .footer__facebook {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .footer__facebook {
+        padding-left: 0px;
+    }
+
+    .footer__facebook::before {
+        display: none;
+    }
+
+    .footer__facebook {
+        margin-bottom: 50px;
+    }
+
+    .page-products__title {
+        font-size: 52px;
+        line-height: 66px;
+    }
+
+    .page-products__text {
+        font-size: 44px;
+        line-height: 48px;
+    }
+
+    .page__header {
+        margin-bottom: 100px;
+    }
+
+    .page-decor-2 {
+        bottom: -90px;
+    }
+}
+
+@media (max-width:650px) {
+    .products__section-img {
+        width: 100px;
+    }
+
+    .page-product__title {
+        font-size: 18px;
+        line-height: 20px;
+    }
+
+    .products__section-item {
+        width: 150px;
+        height: 200px;
+    }
+
+    .product__bg {
+        height: 250px;
+        margin-bottom: 40px;
+    }
+
+    .product__arrow {
+        width: 125px;
+    }
+
+    .footer {
+        margin-top: 50px;
+        ;
+    }
+}
+
+@media (max-width:630px) {
+
+    .expirience__info-content,
+    .clients__info-content,
+    .products-num-content,
+    .florist__info-content {
+        width: 420px;
+    }
+
+    .close__btn-img {
+        width: 40px;
+    }
+
+    .products-num__info,
+    .florist__info {
+        top: 410px;
+    }
+
+    .products-num__info.active,
+    .florist__info.active {
+        top: 410px;
+    }
+
+    .map {
+        width: 130px;
+        height: 190px;
+    }
+
+    .footer__section {
+        padding: 2px;
+    }
+
+    .footer-grafic__img {
+        margin-bottom: 50px;
+    }
+
+    .diclaimer__text {
+        max-width: 430px;
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+
+@media (max-width:615px) {
+    .decoration-1 {
+        bottom: -100px;
+    }
+
+    .page-decor-1,
+    .page-decor-2 {
+        width: 90px;
+    }
+}
+
+@media (max-width:606px) {
+    .clients__info {
+        top: 335px;
+    }
+
+    .clients__info.active {
+        top: 335px;
+    }
+
+    .products-num__info,
+    .products-num__info.active {
+        top: 650px;
+    }
+
+    .florist__info,
+    .florist__info.active {
+        top: 960px;
+    }
+}
+
+@media (max-width:590px) {
+    .header__logo {
+        margin-bottom: 20px;
+    }
+
+    .header__title {
+        font-size: 78px;
+        line-height: 100px;
+    }
+
+    .header__content span {
+        font-size: 56px;
+    }
+
+    .about__us-title {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section__title {
+        font-size: 78px;
+        line-height: 80px;
+    }
+
+    .nav__inner {
+        display: flex;
+        gap: 0;
+        margin: 0px 0px;
+    }
+
+    .nav__item {
+        font-size: 16px;
+    }
+
+    .ab-us__img {
+        width: 100px;
+    }
+
+    .ab-us-numbers {
+        font-size: 38px;
+        line-height: 40px;
+    }
+
+    .ab-us-numbers span {
+        font-size: 28px;
+        line-height: 30px;
+    }
+
+    .ab-us__item {
+        height: 250px;
+    }
+
+    .decoration-4 {
+        top: 75px;
+    }
+}
+
+@media (max-width:500px) {
+    .products__section-img {
+        width: 60px;
+    }
+
+    .page-product__title {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .products__section-item {
+        width: 115px;
+        height: 140px;
+    }
+
+    .products__section-item {
+        padding: 25px 20px;
+    }
+
+    .product__bg {
+        height: 180px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:480px) {
+
+    .expirience__info-content,
+    .clients__info-content,
+    .products-num-content,
+    .florist__info-content {
+        width: 300px;
+    }
+
+    .close__btn-img {
+        width: 20px;
+    }
+
+    .footer-section__title {
+        font-size: 18px;
+        line-height: 20px;
+        padding-top: 10px;
+    }
+
+    .map {
+        width: 100px;
+        height: 160px;
+    }
+
+    .footer__mail,
+    .footer__tel,
+    .footer__facebook {
+        font-size: 14px;
+        line-height: 18px;
+    }
+
+    .page-products__title {
+        font-size: 42px;
+        line-height: 46px;
+    }
+
+    .page-products__text {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .page-decor-1,
+    .page-decor-2 {
+        width: 90px;
+    }
+
+    .page-decor-1 {
+        top: -115px;
+    }
+
+    .page-decor-2 {
+        bottom: -60px;
+    }
+
+    .page-header__inner {
+        flex-direction: column;
+    }
+
+    .header__contact-products {
+        margin-top: 10px;
+    }
+
+    .page-products__title {
+        margin-top: 120px;
+    }
+}
+
+@media (max-width:450px) {
+    .section__title {
+        font-size: 64px;
+        line-height: 70px;
+    }
+
+    .avantages__title {
+        font-size: 56px;
+        line-height: 70px;
+    }
+}
+
+@media (max-width:400px) {
+    .products__section-img {
+        width: 50px;
+    }
+
+    .products__section-item {
+        width: 101px;
+        height: 110px;
+    }
+
+    .page-product__title {
+        font-size: 12px;
+        line-height: 1px;
+    }
+
+    .products__section-item {
+        padding: 15px 10px;
+    }
+
+    .product__bg {
+        height: 135px;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width:380px) {
+    .footer__logo {
+        max-width: 90px;
+    }
+
+    .map {
+        width: 70px;
+        height: 130px;
+    }
+
+    .diclaimer__text {
+        max-width: 285px;
+    }
+}
